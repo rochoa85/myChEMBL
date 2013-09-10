@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'EBI-Conceptual';
+	src:url('fonts/EBI-Conceptual.eot');
+	src:url('fonts/EBI-Conceptual.eot?#iefix') format('embedded-opentype'),
+		url('fonts/EBI-Conceptual.svg#EBI-Conceptual') format('svg'),
+		url('fonts/EBI-Conceptual.woff') format('woff'),
+		url('fonts/EBI-Conceptual.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'EBI-Conceptual';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'EBI-Conceptual';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-TOPLEVEL_training:before {
+	content: "\54";
+}
+.icon-TOPLEVEL_structures:before {
+	content: "\73";
+}
+.icon-TOPLEVEL_small_molecules:before {
+	content: "\43";
+}
+.icon-TOPLEVEL_Services:before {
+	content: "\53";
+}
+.icon-TOPLEVEL_Resource:before {
+	content: "\78";
+}
+.icon-TOPLEVEL_Research:before {
+	content: "\52";
+}
+.icon-TOPLEVEL_Proteins_proteomes:before {
+	content: "\50";
+}
+.icon-TOPLEVEL_OpendayV2:before {
+	content: "\6f";
+}
+.icon-TOPLEVEL_Ontologies:before {
+	content: "\4f";
+}
+.icon-TOPLEVEL_literature:before {
+	content: "\4c";
+}
+.icon-TOPLEVEL_Interactions_Pathways_systems:before {
+	content: "\79";
+}
+.icon-TOPLEVEL_Industry:before {
+	content: "\49";
+}
+.icon-TOPLEVEL_Genes_genomes:before {
+	content: "\44";
+}
+.icon-TOPLEVEL_Functional_genomics:before {
+	content: "\47";
+}
+.icon-TOPLEVEL_Elixir:before {
+	content: "\45";
+}
+.icon-TOPLEVEL_databases:before {
+	content: "\64";
+}
+.icon-TOPLEVEL_Careers:before {
+	content: "\63";
+}
+.icon-EMBL_EBI_hex:before {
+	content: "\65";
+}

@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'EBI-Species';
+	src:url('fonts/EBI-Species.eot');
+	src:url('fonts/EBI-Species.eot?#iefix') format('embedded-opentype'),
+		url('fonts/EBI-Species.svg#EBI-Species') format('svg'),
+		url('fonts/EBI-Species.woff') format('woff'),
+		url('fonts/EBI-Species.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'EBI-Species';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'EBI-Species';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-SPIECES_zebrafish:before {
+	content: "\7a";
+}
+.icon-SPIECES_scorpion:before {
+	content: "\73";
+}
+.icon-SPECIES_worm:before {
+	content: "\77";
+}
+.icon-SPECIES_spider:before {
+	content: "\53";
+}
+.icon-SPECIES_rat:before {
+	content: "\52";
+}
+.icon-SPECIES_plant:before {
+	content: "\70";
+}
+.icon-SPECIES_mouse:before {
+	content: "\6d";
+}
+.icon-SPECIES_man:before {
+	content: "\68";
+}
+.icon-SPECIES_cow:before {
+	content: "\63";
+}
+.icon-SPECIES_corn:before {
+	content: "\43";
+}

@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'EBI-SocialMedia';
+	src:url('fonts/EBI-SocialMedia.eot');
+	src:url('fonts/EBI-SocialMedia.eot?#iefix') format('embedded-opentype'),
+		url('fonts/EBI-SocialMedia.svg#EBI-SocialMedia') format('svg'),
+		url('fonts/EBI-SocialMedia.woff') format('woff'),
+		url('fonts/EBI-SocialMedia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'EBI-SocialMedia';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'EBI-SocialMedia';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-rss:before {
+	content: "\52";
+}
+.icon-youtube:before {
+	content: "\59";
+}
+.icon-vimeo:before {
+	content: "\56";
+}
+.icon-twitter:before {
+	content: "\54";
+}
+.icon-googlePLUS:before {
+	content: "\47";
+}
+.icon-facebook:before {
+	content: "\46";
+}
+.icon-blogger:before {
+	content: "\42";
+}
+.icon-linkedin:before {
+	content: "\4c";
+}

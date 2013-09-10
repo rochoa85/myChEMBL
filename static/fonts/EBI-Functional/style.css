@@ -1,0 +1,187 @@
+@font-face {
+	font-family: 'EBI-Functional';
+	src:url('fonts/EBI-Functional.eot');
+	src:url('fonts/EBI-Functional.eot?#iefix') format('embedded-opentype'),
+		url('fonts/EBI-Functional.svg#EBI-Functional') format('svg'),
+		url('fonts/EBI-Functional.woff') format('woff'),
+		url('fonts/EBI-Functional.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'EBI-Functional';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'EBI-Functional';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-save:before {
+	content: "\53";
+}
+.icon-fullscreen:before {
+	content: "\46";
+}
+.icon-expand:before {
+	content: "\75";
+}
+.icon-database_SUBMIT:before {
+	content: "\44";
+}
+.icon-collapse:before {
+	content: "\77";
+}
+.icon-previousPAGE:before {
+	content: "\3c";
+}
+.icon-nextPAGE:before {
+	content: "\3e";
+}
+.icon-lastPAGE:before {
+	content: "\5d";
+}
+.icon-firstPAGE:before {
+	content: "\5b";
+}
+.icon-undo:before {
+	content: "\7b";
+}
+.icon-treeHeir:before {
+	content: "\e00a";
+}
+.icon-tool:before {
+	content: "\74";
+}
+.icon-target:before {
+	content: "\54";
+}
+.icon-stop:before {
+	content: "\6f";
+}
+.icon-share:before {
+	content: "\68";
+}
+.icon-settings:before {
+	content: "\73";
+}
+.icon-send:before {
+	content: "\6e";
+}
+.icon-remove:before {
+	content: "\2d";
+}
+.icon-refresh:before {
+	content: "\52";
+}
+.icon-redo:before {
+	content: "\7d";
+}
+.icon-print:before {
+	content: "\70";
+}
+.icon-playVIDEO:before {
+	content: "\76";
+}
+.icon-move:before {
+	content: "\6d";
+}
+.icon-map:before {
+	content: "\4d";
+}
+.icon-like:before {
+	content: "\6c";
+}
+.icon-filter:before {
+	content: "\66";
+}
+.icon-edit:before {
+	content: "\65";
+}
+.icon-delete:before {
+	content: "\64";
+}
+.icon-cut:before {
+	content: "\63";
+}
+.icon-crop:before {
+	content: "\5c";
+}
+.icon-compare:before {
+	content: "\4f";
+}
+.icon-close:before {
+	content: "\78";
+}
+.icon-attach:before {
+	content: "\61";
+}
+.icon-analyseALT:before {
+	content: "\7a";
+}
+.icon-analyse:before {
+	content: "\41";
+}
+.icon-align:before {
+	content: "\69";
+}
+.icon-add:before {
+	content: "\2b";
+}
+.icon-Accept:before {
+	content: "\2f";
+}
+.icon-unlock:before {
+	content: "\55";
+}
+.icon-lock:before {
+	content: "\4c";
+}
+.icon-upload:before {
+	content: "\5f";
+}
+.icon-download:before {
+	content: "\3d";
+}
+.icon-zoomOUT:before {
+	content: "\32";
+}
+.icon-zoomIN:before {
+	content: "\33";
+}
+.icon-view:before {
+	content: "\34";
+}
+.icon-search:before {
+	content: "\31";
+}
+.icon-browse:before {
+	content: "\35";
+}
+.icon-unreviewedJOB:before {
+	content: "\2a";
+}
+.icon-approveJOB:before {
+	content: "\28";
+}
+.icon-addJOBtoqueue:before {
+	content: "\29";
+}
+.icon-user_edit:before {
+	content: "\36";
+}
+.icon-user_delete:before {
+	content: "\37";
+}
+.icon-user_add:before {
+	content: "\38";
+}
