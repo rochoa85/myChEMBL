@@ -67,7 +67,8 @@ session_start();
 
 		<h3>Results</h3>
 		<p>
-			<?
+                        <button id='btn-download-sim'>Download Results</button>
+                	<?
 
 			$db = pg_connect("user=$db_user dbname=$db_name host=$db_host port=$db_port");
 			if (!$db) {

@@ -16,8 +16,11 @@ URL: http://www.opensource.org/licenses/apache2.0.php
 //   http://lamehacks.net/blog/simple-php-url-dispatcher
 //   Thank you 
 
+
 $routes = array(
-		"molecule_image" => "molecule_image"
+                "molecule_image"       => "molecule_image",
+                "download_bioactivity" => "download_bioactivity",
+                "download_cmpdsearch"  => "download_cmpdsearch"
 );
 
 

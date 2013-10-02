@@ -458,3 +458,5 @@ body.expander div#local {border-top:1px solid #70D3D3}
 .complement-3 {background-color:#844511}
 .complement-4 {background-color:#E5A066}
 .complement-5 {background-color:#E5B288}
+th {background-color:#70BDBD; color:#FFF; font-weight:normal;}
+.str-popup{color:#0F2559;cursor:pointer;}

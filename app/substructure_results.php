@@ -62,11 +62,13 @@ session_start();
 				echo "<b>Search Type:</b> $searchType";
 			}
 			?>
-		</p>
+
+                </p>
 
 
 		<h3>Results</h3>
-		<p>
+                <p>
+                        <button id='btn-download-sss'>Download Results</button>
 			<?
 			$db = pg_connect("user=$db_user dbname=$db_name host=$db_host port=$db_port");
 			if (!$db) {
