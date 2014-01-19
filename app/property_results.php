@@ -84,26 +84,88 @@ URL: http://www.opensource.org/licenses/apache2.0.php
  					echo '<b>No Results, please search again</b>';
  				}
 				else{
-					echo "<b>$campos[0]:</b> $row[amw]<br/>";
-					echo "<b>$campos[1]:</b> $row[logp]<br/>";
-					echo "<b>$campos[2]:</b> $row[hba]<br/>";
-					echo "<b>$campos[3]:</b> $row[hbd]<br/>";
-					echo "<b>$campos[4]:</b> $row[numatoms]<br/>";
-					echo "<b>$campos[5]:</b> $row[numheavyatoms]<br/>";
-					echo "<b>$campos[6]:</b> $row[numrotatablebonds]<br/>";
-					echo "<b>$campos[7]:</b> $row[numheteroatoms]<br/>";
-					echo "<b>$campos[8]:</b> $row[numrings]<br/>";
-					echo "<b>$campos[9]:</b> $row[tpsa]<br/>";
-					echo "<b>$campos[10]:</b> $row[numaromarings]<br/>";
-					echo "<b>$campos[11]:</b> $row[numalipharings]<br/>";
-					echo "<b>$campos[12]:</b> $row[numsaturarings]<br/>";
-					echo "<b>$campos[13]:</b> $row[numaromahet]<br/>";
-					echo "<b>$campos[14]:</b> $row[numaliphahet]<br/>";
-					echo "<b>$campos[15]:</b> $row[numsaturahet]<br/>";
-					echo "<b>$campos[16]:</b> $row[numaromacarbo]<br/>";
-					echo "<b>$campos[17]:</b> $row[numaliphacarbo]<br/>";
-					echo "<b>$campos[18]:</b> $row[numsaturacarbo]<br/>";
-					echo "<b>$campos[19]:</b> $row[fracsp3]";
+					echo "<table>
+	           <tr>
+	           <th width='150px'>$campos[0]</th>
+	           <td width='550px'>$row[amw]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[1]</th>
+	           <td>$row[logp]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[2]</th>
+	           <td>$row[hba]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[3]</th>
+	           <td>$row[hbd]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[4]</th>
+	           <td>$row[numatoms]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[5]</th>
+	           <td>$row[numheavyatoms]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[6]</th>
+	           <td>$row[numrotatablebonds]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[7]</th>
+	           <td>$row[numheteroatoms]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[8]</th>
+	           <td>$row[numrings]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[9]</th>
+	           <td>$row[tpsa]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[10]</th>
+	           <td>$row[numaromarings]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[11]</th>
+	           <td>$row[numalipharings]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[12]</th>
+	           <td>$row[numsaturarings]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[13]</th>
+	           <td>$row[numaromahet]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[14]</th>
+	           <td>$row[numaliphahet]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[15]</th>
+	           <td>$row[numsaturahet]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[16]</th>
+	           <td>$row[numaromacarbo]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[17]</th>
+	           <td>$row[numaliphacarbo]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[18]</th>
+	           <td>$row[numsaturacarbo]</td>
+	           </tr>
+	           <tr>
+	           <th>$campos[19]</th>
+	           <td>$row[fracsp3]</td>
+	           </tr>
+	           </table>";
 				}
 			} 
  			 

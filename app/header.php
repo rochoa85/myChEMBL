@@ -43,7 +43,7 @@ URL: http://www.opensource.org/licenses/apache2.0.php
   <title>myChEMBL</title>
   <meta name="description" content="myChEMBL">
   <meta name="keywords" content="open-data, chembl, bioinformatics, europe, institute">
-  <meta name="author" content="Rodrigo Ochoa" >
+  <meta name="author" content="root" >
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -82,6 +82,7 @@ URL: http://www.opensource.org/licenses/apache2.0.php
 					<li><a href="structure.php">Structure Search</a></li>
 	    			<li><a href="ws.php">Web Services</a></li>
 	    			<li><a href="property.php">Property Calculation</a></li>
+	    			<li><a href="activity_cliffs.php">Activity Cliffs</a></li>
 	    			<li><a href="tutorial.php">Tutorial</a></li>
 	    			<li><a href="acknowledgements.php">Acknowledgements</a></li>
 				</ul>

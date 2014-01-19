@@ -244,17 +244,27 @@ URL: http://www.opensource.org/licenses/apache2.0.php
 			
 			while ($row = pg_fetch_array($result)) {
 					echo "<tr>
-					        <td><a href='https://www.ebi.ac.uk/chembl/assay/inspect/$row[assay_chembl_id]'>$row[assay_chembl_id]</a></td>
-                                                <td>$row[description]</td>
-                                                <td>$row[assay_type]</td>
-                                                <td>$row[standard_type]</td>
-                                                <td>$row[standard_relation]</td>
-                                                <td>$row[standard_value]</td>
-                                                <td>$row[standard_units]</td>
-                                                <td>$row[activity_comment]</td>
-                                                <td><a href='https://www.ebi.ac.uk/chembl/target/inspect/$row[target_chembl_id]'>$row[target_chembl_id]</a></td>
-                                                <td>$row[pref_name]</td>
-	                                      </tr>";
+					        <td><a href='https://www.ebi.ac.uk/chembl/assay/inspect/$row[assay_chembl_id]'>$row[assay_chembl_id]</a>
+								<form name='actReport' method='get' action='activity_report.php' class='formulario'>
+								<input type='hidden' name='assay' value='$row[assay_chembl_id]' /> 
+                			<input type='submit' value='Activity Cliffs' />
+								</form>  					        
+					        </td>
+            <td>$row[description]</td>
+            <td>$row[assay_type]</td>
+            <td>$row[standard_type]</td>
+            <td>$row[standard_relation]</td>
+            <td>$row[standard_value]</td>
+            <td>$row[standard_units]</td>
+            <td>$row[activity_comment]</td>
+            <td><a href='https://www.ebi.ac.uk/chembl/target/inspect/$row[target_chembl_id]'>$row[target_chembl_id]</a>
+					  <form name='targetReport' method='get' action='target_report.php' class='formulario'>
+                 <input type='hidden' name='target' value='$row[target_chembl_id]' /> 
+                 <input type='submit' value='Activity Cliffs' />
+					  </form>
+            </td>
+            <td>$row[pref_name]</td>
+     </tr>";
 			} 						
 			echo "</table></p>";
 			?>

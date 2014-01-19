@@ -112,6 +112,23 @@ session_start();
 					die("Error in SQL query: " . pg_last_error());
 				}
 
+				$ntdQuery="CREATE TABLE ntd IF NOT EXISTS AS (
+					SELECT DISTINCT md.chembl_id
+					FROM molecule_dictionary md left outer join activities ac on (md.molregno = ac.molregno)
+					left outer join assays a on ( ac.assay_id = a.assay_id)
+					left outer join target_dictionary td on (td.tid = a.tid) 
+					left outer join source s on (a.src_id = s.src_id) 
+					left outer join docs d on (d.doc_id = a.doc_id) 
+					WHERE td.organism ~ 'Plasmodium.*' or td.organism ~ 'Leishmania.*' 
+					or td.organism ~ 'Mycobacterium.*' or td.organism ~ 'Trypanosoma.*'
+					or td.organism ~ 'Dengue.*' or td.organism ~ 'Echinococcus.*' 
+					or td.organism ~ 'Fasciola.*' or td.organism ~ 'Brugia.*'
+					or td.organism ~ 'Onchocerca volvulus' or td.organism ~ 'Schistosoma.*' 
+					or td.organism ~ 'Chlamydia.*')";
+
+				
+				$ntdResult = pg_query($db, $ntdQuery);
+				
 				$cont=1;
 				echo "<table><tr>";
 
@@ -124,9 +141,19 @@ session_start();
 	
 						if ($cont <= 5){
 							$simScore=round($row[sim],2);
-							echo "<td><img src='dispatcher.php/molecule_image/$row[chembl_id]' width='150' height='150'/><br/>
-							<a href='report.php?id=$row[chembl_id]'>$row[chembl_id]</a><br/>
-							Similarity: $simScore<br/></td>";
+							
+							$checkNTD="select chembl_id from ntd where chembl_id='$row[chembl_id]'";
+							$resultCheck = pg_query($db, $checkNTD);
+							$rowNTD=pg_fetch_row($resultCheck);
+							if(empty($rowNTD[0])){
+								echo "<td><img src='dispatcher.php/molecule_image/$row[chembl_id]' width='150' height='150'/><br/>
+								<a href='report.php?id=$row[chembl_id]'>$row[chembl_id]</a><br/>
+								Similarity: $simScore<br/></td>";	
+							}else{
+								echo "<td><img src='dispatcher.php/molecule_image/$row[chembl_id]' width='150' height='150'/><br/>
+								<a href='report.php?id=$row[chembl_id]'>$row[chembl_id]</a><br/>
+								Similarity: $simScore<br/><b>NTD</b><br/></td>";	
+							}
 						}
 						else {
 							echo "</tr><tr>";
